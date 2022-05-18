@@ -6,7 +6,7 @@
         <div style="padding: 14px">
           <div class="card-con">
             <span>Apifox</span>
-            <el-button text class="button">
+            <el-button text class="button" @click="gotoPanel">
               <el-icon>
                 <View/>
               </el-icon>
@@ -23,6 +23,11 @@ export default {
   name: "AppList",
   components:{
     View
+  },
+  methods:{
+    gotoPanel(){
+      this.$router.push({name:'panel'})
+    }
   }
 }
 </script>
