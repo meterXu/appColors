@@ -8,7 +8,7 @@
           <AppMenu/>
         </el-aside>
         <el-main>
-          <AppList/>
+          <router-view></router-view>
         </el-main>
       </el-container>
     </el-container>
@@ -18,7 +18,7 @@
 <script>
 
 import AppMenu from "./AppMenu";
-import AppList from "./AppList";
+import AppList from "../views/AppList";
 export default {
   name:'AppContainer',
   components:{
